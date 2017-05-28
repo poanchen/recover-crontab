@@ -13,6 +13,9 @@ git clone https://github.com/poanchen/recover-crontab.git
 cd recover-crontab
 ```
 
+## Environment
+OS: Ubuntu 14.04.5 LTS
+
 ## Usage
 
 ```
@@ -26,4 +29,7 @@ For example,
 ```
 ./recover-crontab.sh -u ubuntu
 ```
-This will print out all the cron commands ran by the username ubuntu
+Note: For each command that it found, it will promote user input for the cron time. At the end, you can find the ready-to-go command from the stdout or output.txt file.
+
+## Screenshots
+![Loading the first image](demo.PNG)
