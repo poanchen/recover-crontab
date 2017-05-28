@@ -10,10 +10,15 @@ elif [[ $1 == '-u' ]]; then
   else
     stdout="$(ls /var/log/syslog* | grep '[^z]$')"
     files=($stdout)
+    result=''
     for eachPathToFile in "${files[@]}"
     do
       grep "CRON.*${2}" "$eachPathToFile"
+      result+="$(grep CRON.*${2} $eachPathToFile)"
     done
+    if [[ $result == '' ]]; then
+      echo "No cron commands/jobs are ran by the username ${2}."
+    fi
   fi
 else
   echo '[WARNING] Invalid option'
