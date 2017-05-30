@@ -14,7 +14,7 @@ cd recover-crontab
 ```
 
 ## Environment
-Tested on Ubuntu 14.04.5 LTS
+Tested on Ubuntu 14.04.5 LTS Server
 
 ## Usage
 
