@@ -1,6 +1,9 @@
 # recover-crontab
 
-A bash script that will help you to recover a destroyed crontab
+A bash script that will help you to recover a destroyed crontab.
+
+
+Recover-crontab was inspired by [this project](https://github.com/dangreenisrael/recover_crontab). Use it as you like.
 
 ## Why is this useful?
 
