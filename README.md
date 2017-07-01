@@ -17,7 +17,7 @@ cd recover-crontab
 ```
 
 ## Environment
-Tested on Ubuntu 14.04.5 LTS Server
+Tested on Ubuntu 14.04.X LTS Server
 
 ## Usage
 
@@ -33,6 +33,7 @@ For example,
 ./recover-crontab.sh -u ubuntu
 ```
 Note: For each command that it found, it will promote user input for the cron time. At the end, you can find the ready-to-go command from the stdout or output.txt file.
+Hint: Use command 'crontab -e' to add/modify your cron jobs.
 
 ## Screenshots
 ![Loading the first image](demo.PNG)
